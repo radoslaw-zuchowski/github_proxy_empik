@@ -1,0 +1,21 @@
+
+webclient:
+    github:
+        url: https://api.github.com/
+
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/mydatabase
+        username: myuser
+        password: mypassword
+    hikari:
+        connection-timeout: 30000
+        maximum-pool-size: 10
+        minimum-idle: 5
+        idle-timeout: 600000
+        max-lifetime: 1800000
+        pool-name: MyHikariCP
+        auto-commit: true
+    jpa:
+        hibernate:
+            ddl-auto: create

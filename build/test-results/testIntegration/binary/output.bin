@@ -1,0 +1,119 @@
+„08:41:50.679 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+ø08:41:50.683 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+
+(  .   ____          _            __ _ _
+) /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+*( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
++ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+*  '  |____| .__|_| |_|_| |_\__, | / / / /
+) =========|_|==============|___/=/_/_/_/
+
++ :: Spring Boot ::                (v3.3.2)
+
+ö2024-08-19T08:41:50.960+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+Ç2024-08-19T08:41:51.111+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-08-19T08:41:51.112+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-08-19T08:41:51.123+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 27.0.3
+  API Version: 1.46
+#  Operating System: Docker Desktop
+  Total Memory: 7840 MB
+±2024-08-19T08:41:51.151+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Creating container for image: testcontainers/ryuk:0.7.0
+ë2024-08-19T08:41:51.388+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 is starting: ffa4cf6dc5933fba91b36471eecad34a5660c2f37fdc5dc75bfbce08d5f3981b
+´2024-08-19T08:41:51.623+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 started in PT0.471843S
+É2024-08-19T08:41:51.626+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-08-19T08:41:51.626+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+¯2024-08-19T08:41:51.626+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : âœ”ï¸Ž Docker server version should be at least 1.6.0
+§2024-08-19T08:41:51.627+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+á2024-08-19T08:41:51.651+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 045a1d32a42c5a099c755b91b7141dd7fd0a7ef9544ca64500ce434ed8d97052
+ª2024-08-19T08:41:52.466+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.839663S
+á2024-08-19T08:41:52.467+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:50145/integration-tests-db?loggerLevel=OFF)
+‘2024-08-19T08:41:52.570+02:00  INFO 71227 --- [githubProxy] [    Test worker] c.z.g.GetGithubLoginSpecification        : Starting GetGithubLoginSpecification using Java 21.0.4 with PID 71227 (started by radoslaw.zuchowski in /Users/radoslaw.zuchowski/Projects/githubProxy)
+ª2024-08-19T08:41:52.571+02:00  INFO 71227 --- [githubProxy] [    Test worker] c.z.g.GetGithubLoginSpecification        : The following 1 profile is active: "integration"
+µ2024-08-19T08:41:53.094+02:00  INFO 71227 --- [githubProxy] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+Ï2024-08-19T08:41:53.112+02:00  INFO 71227 --- [githubProxy] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+Ÿ2024-08-19T08:41:53.531+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+“2024-08-19T08:41:53.539+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ª2024-08-19T08:41:53.539+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+¬2024-08-19T08:41:53.572+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+¸2024-08-19T08:41:53.573+02:00  INFO 71227 --- [githubProxy] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 988 ms
+³2024-08-19T08:41:53.745+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+«2024-08-19T08:41:53.790+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+ 2024-08-19T08:41:53.814+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+±2024-08-19T08:41:53.968+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+”2024-08-19T08:41:53.985+02:00  INFO 71227 --- [githubProxy] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ã2024-08-19T08:41:54.095+02:00  INFO 71227 --- [githubProxy] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44faf689
+™2024-08-19T08:41:54.096+02:00  INFO 71227 --- [githubProxy] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+ì2024-08-19T08:41:54.554+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ž2024-08-19T08:41:54.563+02:00  WARN 71227 --- [githubProxy] [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+©2024-08-19T08:41:54.563+02:00  WARN 71227 --- [githubProxy] [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "login_counters" does not exist, skipping
+½2024-08-19T08:41:54.569+02:00  INFO 71227 --- [githubProxy] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+±2024-08-19T08:41:55.006+02:00  WARN 71227 --- [githubProxy] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+³2024-08-19T08:41:55.538+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50160 (http) with context path '/'
+Ÿ2024-08-19T08:41:55.574+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+“2024-08-19T08:41:55.575+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ª2024-08-19T08:41:55.575+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+¬2024-08-19T08:41:55.588+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+·2024-08-19T08:41:55.588+02:00  INFO 71227 --- [githubProxy] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 48 ms
+­2024-08-19T08:41:55.597+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+³2024-08-19T08:41:55.615+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50161 (http) with context path '/'
+Ê2024-08-19T08:41:55.627+02:00  INFO 71227 --- [githubProxy] [    Test worker] c.z.g.GetGithubLoginSpecification        : Started GetGithubLoginSpecification in 4.934 seconds (process running for 6.043)
+ ÞWARNING: A Java agent has been loaded dynamically (/Users/radoslaw.zuchowski/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.18/417558ea01fe9f0e8a94af28b9469d281c4e3984/byte-buddy-agent-1.14.18.jar)
+ qWARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+ rWARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+ UWARNING: Dynamic loading of agents will be disallowed by default in a future release
+³2024-08-19T08:41:56.315+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+¢2024-08-19T08:41:56.315+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+š2024-08-19T08:41:56.316+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+¬2024-08-19T08:41:56.323+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.config.LoggingInterceptor          : Request URL: http://localhost:50160/users/testuser
+Request Method: GET
+>Request Header: accept = application/json, application/*+json
+8Request Header: accept-encoding = gzip, x-gzip, deflate
+'Request Header: host = localhost:50160
+(Request Header: connection = keep-alive
+CRequest Header: user-agent = Apache-HttpClient/5.3.1 (Java/21.0.4)
+
+2024-08-19T08:41:56.360+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.application.MetricService          : Updated counter for seller testuser
+2024-08-19T08:41:56.417+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.a.o.github.GithubClientImpl        : Request to github for user testuser
+Ž2024-08-19T08:41:56.460+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.config.LoggingInterceptor          : Response Status: 200
+1Response Header: Content-Type = application/json
+-Response Header: Transfer-Encoding = chunked
+6Response Header: Date = Mon, 19 Aug 2024 06:41:56 GMT
+)Response Header: Keep-Alive = timeout=60
+)Response Header: Connection = keep-alive
+
+¯2024-08-19T08:41:56.493+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.config.LoggingInterceptor          : Request URL: http://localhost:50160/users/nonexistent
+Request Method: GET
+ORequest Header: accept = text/plain, application/json, application/*+json, */*
+8Request Header: accept-encoding = gzip, x-gzip, deflate
+'Request Header: host = localhost:50160
+(Request Header: connection = keep-alive
+CRequest Header: user-agent = Apache-HttpClient/5.3.1 (Java/21.0.4)
+
+ 2024-08-19T08:41:56.494+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.application.MetricService          : Updated counter for seller nonexistent
+ 2024-08-19T08:41:56.509+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.a.o.github.GithubClientImpl        : Request to github for user nonexistent
+‚2024-08-19T08:41:56.511+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] o.a.h.c.h.i.c.HttpRequestRetryExec       : Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8080
+Ž2024-08-19T08:41:58.541+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.config.LoggingInterceptor          : Response Status: 404
+1Response Header: Content-Type = application/json
+-Response Header: Transfer-Encoding = chunked
+6Response Header: Date = Mon, 19 Aug 2024 06:41:58 GMT
+)Response Header: Keep-Alive = timeout=60
+)Response Header: Connection = keep-alive
+
+­2024-08-19T08:41:58.573+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.config.LoggingInterceptor          : Request URL: http://localhost:50160/users/testuser2
+Request Method: GET
+ORequest Header: accept = text/plain, application/json, application/*+json, */*
+8Request Header: accept-encoding = gzip, x-gzip, deflate
+'Request Header: host = localhost:50160
+(Request Header: connection = keep-alive
+CRequest Header: user-agent = Apache-HttpClient/5.3.1 (Java/21.0.4)
+
+ž2024-08-19T08:41:58.574+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.application.MetricService          : Updated counter for seller testuser2
+ž2024-08-19T08:41:58.581+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.a.o.github.GithubClientImpl        : Request to github for user testuser2
+‚2024-08-19T08:41:58.582+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] o.a.h.c.h.i.c.HttpRequestRetryExec       : Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}->http://localhost:8080
+Ž2024-08-19T08:42:00.598+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.config.LoggingInterceptor          : Response Status: 500
+1Response Header: Content-Type = application/json
+-Response Header: Transfer-Encoding = chunked
+6Response Header: Date = Mon, 19 Aug 2024 06:42:00 GMT
+$Response Header: Connection = close
+

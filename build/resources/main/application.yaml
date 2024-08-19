@@ -1,0 +1,28 @@
+spring.application.name: githubProxy
+
+webclient:
+    github:
+        readTimeout: 500
+        connectionTimeout: 500
+        cache:
+            expireAfter: 10
+            maximumSize: 1000
+        retry:
+            maxAttempts: 3
+            backoffDuration: 1000
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+            # expose specific endpoints
+            include: 'health,metrics'
+    endpoint:
+        health:
+            show-details: always
+        shutdown:
+            enabled: true
+    server:
+        port: 8081
+

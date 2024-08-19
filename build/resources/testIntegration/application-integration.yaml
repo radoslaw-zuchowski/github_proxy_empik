@@ -1,0 +1,5 @@
+spring.application.name: githubProxy
+
+webclient:
+    github:
+        url: http://localhost:8080/

@@ -1,0 +1,91 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'org.springframework.boot' version '3.3.2'
+    id 'io.spring.dependency-management' version '1.1.6'
+    id 'com.diffplug.spotless' version "6.25.0"
+    id("com.google.osdetector") version "1.7.0"
+}
+
+group = 'com.zuchol'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    if (osdetector.arch == "aarch_64") {
+        implementation("io.netty:netty-all")
+    }
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.retry:spring-retry'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-cache'
+    implementation 'com.github.ben-manes.caffeine:caffeine'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.postgresql:postgresql'
+
+    testImplementation 'org.spockframework:spock-core:2.4-M4-groovy-4.0'
+    testImplementation 'org.spockframework:spock-spring:2.4-M4-groovy-4.0'
+    testImplementation 'org.apache.groovy:groovy-all:4.0.22'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.cloud:spring-cloud-contract-wiremock:4.1.4'
+    testImplementation 'org.testcontainers:postgresql:1.20.1'
+
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+
+sourceSets {
+    testIntegration {
+        groovy.srcDir 'src/integration/groovy'
+        resources.srcDir 'src/integration/resources'
+        compileClasspath += main.output
+        runtimeClasspath += main.output
+    }
+}
+
+configurations {
+    testIntegrationImplementation.extendsFrom testImplementation
+    testIntegrationRuntime.extendsFrom testRuntime
+}
+
+tasks.register('testIntegration', Test) {
+    description = 'Runs integration tests.'
+    group = 'verification'
+    testClassesDirs = sourceSets.testIntegration.output.classesDirs
+    classpath = sourceSets.testIntegration.runtimeClasspath
+    useJUnitPlatform()
+    shouldRunAfter test
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+testIntegration {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+spotless {
+    java {
+        googleJavaFormat()
+    }
+}
+
+tasks.check.dependsOn testIntegration

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - GetGithubLoginSpecification</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>GetGithubLoginSpecification</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.zuchol.githubproxy.html">com.zuchol.githubproxy</a> &gt; GetGithubLoginSpecification</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10.078s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should return 404 for non-existent user</td>
+<td class="success">2.074s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should return 500 for server error</td>
+<td class="success">2.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should return user data for existing user</td>
+<td class="success">5.951s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>08:41:50.679 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+08:41:50.683 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-19T08:41:50.960+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+2024-08-19T08:41:51.111+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+2024-08-19T08:41:51.112+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-08-19T08:41:51.123+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 27.0.3
+  API Version: 1.46
+  Operating System: Docker Desktop
+  Total Memory: 7840 MB
+2024-08-19T08:41:51.151+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Creating container for image: testcontainers/ryuk:0.7.0
+2024-08-19T08:41:51.388+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 is starting: ffa4cf6dc5933fba91b36471eecad34a5660c2f37fdc5dc75bfbce08d5f3981b
+2024-08-19T08:41:51.623+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.testcontainers/ryuk:0.7.0             : Container testcontainers/ryuk:0.7.0 started in PT0.471843S
+2024-08-19T08:41:51.626+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.t.utility.RyukResourceReaper           : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2024-08-19T08:41:51.626+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-08-19T08:41:51.626+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-08-19T08:41:51.627+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Creating container for image: postgres:latest
+2024-08-19T08:41:51.651+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Container postgres:latest is starting: 045a1d32a42c5a099c755b91b7141dd7fd0a7ef9544ca64500ce434ed8d97052
+2024-08-19T08:41:52.466+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Container postgres:latest started in PT0.839663S
+2024-08-19T08:41:52.467+02:00  INFO 71227 --- [githubProxy] [    Test worker] tc.postgres:latest                       : Container is started (JDBC URL: jdbc:postgresql://localhost:50145/integration-tests-db?loggerLevel=OFF)
+2024-08-19T08:41:52.570+02:00  INFO 71227 --- [githubProxy] [    Test worker] c.z.g.GetGithubLoginSpecification        : Starting GetGithubLoginSpecification using Java 21.0.4 with PID 71227 (started by radoslaw.zuchowski in /Users/radoslaw.zuchowski/Projects/githubProxy)
+2024-08-19T08:41:52.571+02:00  INFO 71227 --- [githubProxy] [    Test worker] c.z.g.GetGithubLoginSpecification        : The following 1 profile is active: &quot;integration&quot;
+2024-08-19T08:41:53.094+02:00  INFO 71227 --- [githubProxy] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19T08:41:53.112+02:00  INFO 71227 --- [githubProxy] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2024-08-19T08:41:53.531+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-08-19T08:41:53.539+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-19T08:41:53.539+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19T08:41:53.572+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-19T08:41:53.573+02:00  INFO 71227 --- [githubProxy] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 988 ms
+2024-08-19T08:41:53.745+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19T08:41:53.790+02:00  INFO 71227 --- [githubProxy] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19T08:41:53.814+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-19T08:41:53.968+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19T08:41:53.985+02:00  INFO 71227 --- [githubProxy] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-19T08:41:54.095+02:00  INFO 71227 --- [githubProxy] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44faf689
+2024-08-19T08:41:54.096+02:00  INFO 71227 --- [githubProxy] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-19T08:41:54.554+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19T08:41:54.563+02:00  WARN 71227 --- [githubProxy] [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-08-19T08:41:54.563+02:00  WARN 71227 --- [githubProxy] [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : table &quot;login_counters&quot; does not exist, skipping
+2024-08-19T08:41:54.569+02:00  INFO 71227 --- [githubProxy] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19T08:41:55.006+02:00  WARN 71227 --- [githubProxy] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-19T08:41:55.538+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50160 (http) with context path '/'
+2024-08-19T08:41:55.574+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-08-19T08:41:55.575+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-19T08:41:55.575+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19T08:41:55.588+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-08-19T08:41:55.588+02:00  INFO 71227 --- [githubProxy] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 48 ms
+2024-08-19T08:41:55.597+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-08-19T08:41:55.615+02:00  INFO 71227 --- [githubProxy] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 50161 (http) with context path '/'
+2024-08-19T08:41:55.627+02:00  INFO 71227 --- [githubProxy] [    Test worker] c.z.g.GetGithubLoginSpecification        : Started GetGithubLoginSpecification in 4.934 seconds (process running for 6.043)
+2024-08-19T08:41:56.315+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-19T08:41:56.315+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-19T08:41:56.316+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-19T08:41:56.323+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.config.LoggingInterceptor          : Request URL: http://localhost:50160/users/testuser
+Request Method: GET
+Request Header: accept = application/json, application/*+json
+Request Header: accept-encoding = gzip, x-gzip, deflate
+Request Header: host = localhost:50160
+Request Header: connection = keep-alive
+Request Header: user-agent = Apache-HttpClient/5.3.1 (Java/21.0.4)
+
+2024-08-19T08:41:56.360+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.application.MetricService          : Updated counter for seller testuser
+2024-08-19T08:41:56.417+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.a.o.github.GithubClientImpl        : Request to github for user testuser
+2024-08-19T08:41:56.460+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-1] c.z.g.config.LoggingInterceptor          : Response Status: 200
+Response Header: Content-Type = application/json
+Response Header: Transfer-Encoding = chunked
+Response Header: Date = Mon, 19 Aug 2024 06:41:56 GMT
+Response Header: Keep-Alive = timeout=60
+Response Header: Connection = keep-alive
+
+2024-08-19T08:41:56.493+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.config.LoggingInterceptor          : Request URL: http://localhost:50160/users/nonexistent
+Request Method: GET
+Request Header: accept = text/plain, application/json, application/*+json, */*
+Request Header: accept-encoding = gzip, x-gzip, deflate
+Request Header: host = localhost:50160
+Request Header: connection = keep-alive
+Request Header: user-agent = Apache-HttpClient/5.3.1 (Java/21.0.4)
+
+2024-08-19T08:41:56.494+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.application.MetricService          : Updated counter for seller nonexistent
+2024-08-19T08:41:56.509+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.a.o.github.GithubClientImpl        : Request to github for user nonexistent
+2024-08-19T08:41:56.511+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] o.a.h.c.h.i.c.HttpRequestRetryExec       : Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}-&gt;http://localhost:8080
+2024-08-19T08:41:58.541+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-2] c.z.g.config.LoggingInterceptor          : Response Status: 404
+Response Header: Content-Type = application/json
+Response Header: Transfer-Encoding = chunked
+Response Header: Date = Mon, 19 Aug 2024 06:41:58 GMT
+Response Header: Keep-Alive = timeout=60
+Response Header: Connection = keep-alive
+
+2024-08-19T08:41:58.573+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.config.LoggingInterceptor          : Request URL: http://localhost:50160/users/testuser2
+Request Method: GET
+Request Header: accept = text/plain, application/json, application/*+json, */*
+Request Header: accept-encoding = gzip, x-gzip, deflate
+Request Header: host = localhost:50160
+Request Header: connection = keep-alive
+Request Header: user-agent = Apache-HttpClient/5.3.1 (Java/21.0.4)
+
+2024-08-19T08:41:58.574+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.application.MetricService          : Updated counter for seller testuser2
+2024-08-19T08:41:58.581+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.a.o.github.GithubClientImpl        : Request to github for user testuser2
+2024-08-19T08:41:58.582+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] o.a.h.c.h.i.c.HttpRequestRetryExec       : Recoverable I/O exception (org.apache.hc.core5.http.NoHttpResponseException) caught when processing request to {}-&gt;http://localhost:8080
+2024-08-19T08:42:00.598+02:00  INFO 71227 --- [githubProxy] [o-auto-1-exec-3] c.z.g.config.LoggingInterceptor          : Response Status: 500
+Response Header: Content-Type = application/json
+Response Header: Transfer-Encoding = chunked
+Response Header: Date = Mon, 19 Aug 2024 06:42:00 GMT
+Response Header: Connection = close
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/radoslaw.zuchowski/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.18/417558ea01fe9f0e8a94af28b9469d281c4e3984/byte-buddy-agent-1.14.18.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 19 sie 2024, 08:42:03</p>
+</div>
+</div>
+</body>
+</html>

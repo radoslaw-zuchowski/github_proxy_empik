@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zuchol.githubproxy.domain.CalculationServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-08-18T20:23:44" hostname="polpc12105" time="0.016">
+  <properties/>
+  <testcase name="shouldHandleCaseWhenFollowersNumberIsNegative()" classname="com.zuchol.githubproxy.domain.CalculationServiceTest" time="0.008"/>
+  <testcase name="shouldReturnZeroWhenFollowersNumberIsNull()" classname="com.zuchol.githubproxy.domain.CalculationServiceTest" time="0.002"/>
+  <testcase name="shouldReturnZeroWhenFollowersNumberIsZero()" classname="com.zuchol.githubproxy.domain.CalculationServiceTest" time="0.001"/>
+  <testcase name="shouldHandleCaseWhenPublicReposNumberIsZero()" classname="com.zuchol.githubproxy.domain.CalculationServiceTest" time="0.001"/>
+  <testcase name="shouldHandleCaseWhenThereIsOneFollowers()" classname="com.zuchol.githubproxy.domain.CalculationServiceTest" time="0.0"/>
+  <testcase name="shouldReturnCorrectValueWhenFollowersNumberIsGreaterThanZero()" classname="com.zuchol.githubproxy.domain.CalculationServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
