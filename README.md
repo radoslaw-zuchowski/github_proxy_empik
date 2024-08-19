@@ -22,4 +22,8 @@ I think that errors during connection to database could be ignored.
 business logic is to get data from API call to github and we could live with bad counter. 
 Or we could send some message to some broker and than i separate thread run database operations without affecting the basic logic.
 
-But this is business decision.
+
+We could also think about hystrix and some falback in request to github api and response to our client with some default account and not with error.
+
+
+But this are business decisions.
